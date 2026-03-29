@@ -1,0 +1,48 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: lightblue;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.box::before {
+    content: "\2746";
+    display: block;
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 100%;
+    }
+}
